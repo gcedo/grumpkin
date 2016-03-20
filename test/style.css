@@ -1,3 +1,7 @@
+div {
+  cursor: pointer;
+}
+
 div.foo {
   width: 46px;
   color: #fff;
@@ -8,6 +12,6 @@ div.foo {
   height: 300px;
 }
 
-.bar {
+#bar {
   height: 50px;
 }
