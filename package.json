@@ -4,9 +4,8 @@
   "description": "",
   "main": "lib/index.js",
   "scripts": {
-    "dev": "nodemon --exec babel-node src/index.js",
     "build": "babel src -d lib",
-    "test": "nodemon --exec mocha --compilers js:babel-register"
+    "test": "mocha --compilers js:babel-register"
   },
   "keywords": [],
   "author": "Edoardo Colombo <edo.gcolombo@gmail.com>",
