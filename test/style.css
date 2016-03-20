@@ -1,0 +1,13 @@
+div.foo {
+  width: 46px;
+  color: #fff;
+}
+
+.foo {
+  width: 100px;
+  height: 300px;
+}
+
+.bar {
+  height: 50px;
+}
