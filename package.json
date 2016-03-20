@@ -7,7 +7,7 @@
     "test": "mocha --compilers js:babel-register",
     "test:watch": "nodemon --exec npm test",
     "lint": "eslint --ignore-path .gitignore .",
-    "prepublish": "npm run build",
+    "prepublish": "mkdir -p lib && npm run build",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
