@@ -5,9 +5,21 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "babel src -d lib",
-    "test": "mocha --compilers js:babel-register"
+    "test": "mocha --compilers js:babel-register",
+    "lint": "eslint --ignore-path .gitignore ."
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gcedo/grumpkin.git"
+  },
+  "keywords": [
+    "react",
+    "test",
+    "css"
+  ],
+  "ghooks": {
+    "pre-commit": "npm run lint"
+  },
   "author": "Edoardo Colombo <edo.gcolombo@gmail.com>",
   "babel": {
     "presets": [
@@ -39,8 +51,10 @@
     "babel-preset-stage-0": "^6.5.0",
     "babel-register": "^6.7.2",
     "chai": "^3.5.0",
+    "eslint": "^2.4.0",
     "eslint-config-strict": "^8.5.0",
     "eslint-config-strict-react": "^8.0.1",
+    "ghooks": "^1.0.3",
     "jsdomify": "^2.0.1",
     "mocha": "^2.4.5",
     "react": "^0.14.7"
