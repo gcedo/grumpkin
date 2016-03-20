@@ -25,6 +25,7 @@
     "css": "^2.2.1",
     "css-select": "^1.2.0",
     "htmlparser2": "^3.9.0",
+    "lodash.merge": "^4.3.2",
     "lodash.orderby": "^4.2.1",
     "lodash.sortby": "^4.2.1",
     "react-dom": "^0.14.7",
