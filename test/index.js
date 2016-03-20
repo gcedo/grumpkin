@@ -24,10 +24,11 @@ describe('grumpkin', () => {
 
 
   it('simple render', () => {
-    const element = <div className="foo">Hello World!</div>;
+    const element = <div className="foo" id="bar">Hello World!</div>;
     const computedStyle = grumpkin(element, stylesheet);
     computedStyle.should.have.property('width').and.equal('46px');
-    computedStyle.should.have.property('height').and.equal('300px');
+    computedStyle.should.have.property('height').and.equal('50px');
     computedStyle.should.have.property('color').and.equal('#fff');
+    computedStyle.should.have.property('cursor').and.equal('pointer');
   });
 });
