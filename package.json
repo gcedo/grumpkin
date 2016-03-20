@@ -6,6 +6,7 @@
   "scripts": {
     "build": "babel src -d lib",
     "test": "mocha --compilers js:babel-register",
+    "test:watch": "nodemon --exec npm test",
     "lint": "eslint --ignore-path .gitignore ."
   },
   "repository": {
@@ -57,6 +58,7 @@
     "ghooks": "^1.0.3",
     "jsdomify": "^2.0.1",
     "mocha": "^2.4.5",
+    "nodemon": "^1.9.1",
     "react": "^0.14.7"
   }
 }
