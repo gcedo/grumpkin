@@ -14,7 +14,7 @@ export default function grumpkin(element, stylesheet) {
   const CSSrules = parsedCss.stylesheet.rules.map((rule) => {
     const score = parseInt(
       computeSpecificity(rule.selectors[0])[0].specificity.split(',').join(''),
-      0
+      10
     );
     return {
       selector: rule.selectors[0],
