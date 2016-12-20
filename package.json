@@ -57,7 +57,7 @@
     "eslint": "^2.4.0",
     "eslint-config-strict": "^8.5.0",
     "eslint-config-strict-react": "^8.0.1",
-    "ghooks": "^1.0.3",
+    "ghooks": "^2.0.0",
     "jsdomify": "^2.0.1",
     "mocha": "^2.4.5",
     "nodemon": "^1.9.1",
